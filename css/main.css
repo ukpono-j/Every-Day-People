@@ -169,13 +169,13 @@ body {
         position: absolute;
         display: block;
         width: 100%;
-    background: linear-gradient(to right, #0a5728, #0a090f);
+        background: linear-gradient(to right, #0a5728, #0a090f);
         /* background-color: #333; */
         /* border: 1px solid red; */
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 69px;
+        top: 62px;
         left: 0px;
     }
 
@@ -191,6 +191,10 @@ body {
     .nav>#nav-check:checked~.nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
+    }
+
+    .nav>.nav-header>.nav-title {
+        font-size: 20px;
     }
 }
 
@@ -287,7 +291,7 @@ body {
 .main-content1 {
     position: relative;
     z-index: 1;
-    padding-top: 69px;
+    padding-top: 62px;
 }
 
 .hero1 {
@@ -328,16 +332,18 @@ body {
     animation: shad-anim 15s linear infinite;
 }
 
-@media screen and (max-width: 624px){
+@media screen and (max-width: 624px) {
     .hero-t {
         font-size: 4em;
         line-height: 80px !important;
         /* height: 100px !important; */
     }
+
     .hero-btn a {
         position: relative;
         top: 0px !important;
     }
+
     .hero-t:after {
         top: 0.88em;
         left: 0.1em;
@@ -345,12 +351,13 @@ body {
 
 }
 
-@media screen and (max-width: 351px){
+@media screen and (max-width: 351px) {
     .hero-t {
         font-size: 3em;
         line-height: 60px !important;
         /* height: 100px !important; */
     }
+
     .hero-btn a {
         display: flex;
         padding: 14px 30px;
@@ -360,9 +367,9 @@ body {
         color: white;
         font-size: 14px;
         text-decoration: none;
-    
+
     }
-    
+
 }
 
 
@@ -641,9 +648,8 @@ body {
 }
 
 
-@media screen and (max-width: 434px){
+@media screen and (max-width: 434px) {}
 
-}
 .gallery-head {
     text-align: center;
     font-family: 'Lilita One', cursive;
@@ -696,7 +702,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 @supports (display: grid) {
     .gallery {
         display: grid;
-        grid-template-columns: repeat( minmax(25rem, 1fr));
+        grid-template-columns: repeat(minmax(25rem, 1fr));
         grid-gap: 2rem;
     }
 
@@ -711,32 +717,36 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 
 /* ====================== FOUNDER =================== */
-.founder{
+.founder {
     height: auto;
     padding: 70px 0px;
     background: linear-gradient(to right, #0a5728, #0a090f);
     /* border: 1px solid white; */
 }
-.founder-title{
+
+.founder-title {
     text-align: center;
     font-family: 'Lilita One', cursive;
     padding-bottom: 30px;
     color: white;
     font-size: 48px;
 }
-.founder-container{
+
+.founder-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.founder-1{
+
+.founder-1 {
     width: 300px;
     height: auto;
     margin: 20px;
     /* border-radius: 50px; */
     /* border: 1px solid white; */
 }
-.founder-img{
+
+.founder-img {
     width: 100%;
     /* border-top-left-radius: 50px;
     border-top-right-radius: 50px; */
@@ -744,7 +754,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
     border-radius: 50px;
     /* border: 1px solid white; */
 }
-.founder-img img{
+
+.founder-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -752,53 +763,62 @@ Remove or comment-out the code block below to see how the browser will fall-back
     border-top-right-radius: 50px; */
     border-radius: 50px;
 }
-.founder-txt{
+
+.founder-txt {
     height: auto;
     display: flex;
     padding-bottom: 10px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
- 
+
 }
-.founder-name{
+
+.founder-name {
     color: white;
     /* font-family: 'Comfortaa', cursive; */
     font-family: 'Lilita One', cursive;
     font-size: 20px;
-    padding:0px 10px ;
+    padding: 0px 10px;
     text-align: center;
 }
-.handles{
+
+.handles {
     height: 40px;
     width: 40px;
     border: 1px solid rgb(227, 227, 227);
     border-radius: 100%;
 }
-.handles-container{
+
+.handles-container {
     display: flex;
     align-items: center;
 }
-.handles-container > div{
+
+.handles-container>div {
     margin: 0px 6px;
 }
-.handles-container a{
+
+.handles-container a {
     /* text-decoration: none; */
     font-family: 'Comfortaa', cursive;
     color: #fff;
 }
-.handles img{
+
+.handles img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.founder-msg{
+
+.founder-msg {
     display: flex;
     justify-content: center;
     align-items: center;
-   padding: 30px 0px;
+    padding: 30px 0px;
 }
-.founder-msg-container{
+
+.founder-msg-container {
     width: 50%;
     height: auto;
     font-family: 'Comfortaa', cursive;
@@ -808,33 +828,39 @@ Remove or comment-out the code block below to see how the browser will fall-back
     text-align: center;
 }
 
-@media screen and (max-width: 608px){
-    .founder-container{
+@media screen and (max-width: 608px) {
+    .founder-container {
         display: block;
     }
-    .founder-1{
+
+    .founder-1 {
         width: auto;
         height: auto;
         margin: 20px;
     }
-    .founder-img{
+
+    .founder-img {
         height: 340px;
     }
-    .founder-title{
+
+    .founder-title {
         font-size: 30px;
         padding: 0px 30px;
     }
-    .gallery-head{
+
+    .gallery-head {
         font-size: 30px;
         padding: 0px 30px;
     }
-    .founder-msg-container{
+
+    .founder-msg-container {
         width: 100%;
         padding: 30px;
         font-size: 15px;
     }
-    .founder-msg{
-       padding: 10px 0px;
+
+    .founder-msg {
+        padding: 10px 0px;
     }
-    
+
 }
