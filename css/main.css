@@ -73,6 +73,8 @@ body {
 
 /*   ========= NAVIATION  BAR STARTS ============  */
 
+
+
 .nav {
     height: auto;
     width: 100%;
@@ -114,7 +116,7 @@ body {
 .nav>.nav-links>a {
     display: inline-block;
     padding: 13px 10px 13px 20px;
-    /* border: 1px solid red; */
+    /* border: 1px solid wheat solid red; */
     text-decoration: none;
     font-family: 'Lilita One', cursive;
     color: #efefef;
@@ -122,7 +124,7 @@ body {
 
 .nav>.nav-links>a:hover {
     background-color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid wheat solid white;
 }
 
 .nav>#nav-check {
@@ -149,7 +151,7 @@ body {
         display: block;
         /* width: 50px; */
         /* height: 50px;*/
-        /* border: 1px solid  white; */
+        /* border: 1px solid wheat solid  white; */
         /* padding: 0px 13px; */
     }
 
@@ -169,10 +171,10 @@ body {
     .nav>.nav-links {
         position: absolute;
         display: block;
-        width: 100%;
+        width: 60%;
         background: linear-gradient(to right, #0a5728, #0a090f);
         /* background-color: #333; */
-        /* border: 1px solid red; */
+        /* border: 1px solid wheat solid red; */
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -215,7 +217,7 @@ body {
     top: -16px;
     left: -42px;
     min-width: 100%;
-    /* border: 1px solid red; */
+    /* border: 1px solid wheat solid red; */
     height: 100%;
     overflow: hidden;
 }
@@ -387,7 +389,7 @@ body {
 
 
 .hero-container {
-    /* border: 1px solid white; */
+    /* border: 1px solid wheat solid white; */
     width: auto;
     display: flex;
     flex-direction: column;
@@ -448,7 +450,7 @@ body {
 .social-icons .icons {
     height: 40px;
     width: 40px;
-    border: 1px solid #fff;
+    border: 1px solid wheat solid #fff;
     border-radius: 100%;
 }
 
@@ -462,7 +464,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 10px;
+    padding: 40px 0px;
     /* justify-content: space-between; */
 }
 
@@ -472,7 +474,8 @@ body {
 }
 
 .about-img {
-    width: 400px;
+    width: 420px;
+    border: 1px solid wheat;
     /* height: 300px; */
 }
 
@@ -485,7 +488,8 @@ body {
 .about-txt {
     width: 600px;
     height: auto;
-    /* border: 1px solid black; */
+    padding: 0px 10px;
+    /* border: 1px solid wheat solid black; */
 }
 
 .about-txt h3 {
@@ -524,7 +528,7 @@ body {
     }
 
     .about-img {
-        width: auto;
+        width: 100%;
     }
 
 }
@@ -573,7 +577,7 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    border: 1px solid #322659;
+    border: 1px solid white;
     top: -10px;
     left: 50%;
     z-index: 0;
@@ -588,11 +592,11 @@ body {
     position: absolute;
     width: 5px;
     height: 5px;
-    top: -14px;
-    left: 52%;
+    top: -15px;
+    left: 51.8%;
     z-index: 5;
     border-radius: 50% 50%;
-    background: #000;
+    background: #fdc830;
 }
 
 @keyframes swing {
@@ -609,7 +613,7 @@ body {
 /* =========== GALLERY ============= */
 .Gen-gallery {
     height: auto;
-    border: 1px solid transparent;
+    border: 1px solid wheat solid transparent;
     background: linear-gradient(to right, #0a5728, #0a090f);
     /* background-color: #139cab; */
     padding-top: 40px;
@@ -732,7 +736,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     height: auto;
     padding: 70px 0px;
     background: linear-gradient(to right, #0a5728, #0a090f);
-    /* border: 1px solid white; */
+    /* border: 1px solid wheat solid white; */
 }
 
 .founder-title {
@@ -754,7 +758,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     height: auto;
     margin: 20px;
     /* border-radius: 50px; */
-    /* border: 1px solid white; */
+    /* border: 1px solid wheat solid white; */
 }
 
 .founder-img {
@@ -763,7 +767,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     border-top-right-radius: 50px; */
     height: 300px;
     border-radius: 50px;
-    /* border: 1px solid white; */
+    /* border: 1px solid wheat solid white; */
 }
 
 .founder-img img {
@@ -797,7 +801,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .handles {
     height: 40px;
     width: 40px;
-    border: 1px solid rgb(227, 227, 227);
+    border: 1px solid wheat solid rgb(227, 227, 227);
     border-radius: 100%;
 }
 
@@ -885,5 +889,5 @@ Remove or comment-out the code block below to see how the browser will fall-back
 /* ======================= TEAMS ================ */
 .teams{
     height: 100vh;
-    border: 1px solid #000;
+    border: 1px solid wheat solid #000;
 }

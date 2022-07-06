@@ -5,7 +5,3 @@ $(window).on("load", function () {
 	}, 3500);
 });
 
-
-
-
-
