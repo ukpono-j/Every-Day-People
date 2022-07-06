@@ -169,7 +169,8 @@ body {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #333;
+    background: linear-gradient(to right, #0a5728, #0a090f);
+        /* background-color: #333; */
         /* border: 1px solid red; */
         height: 0px;
         transition: all 0.3s ease-in;
@@ -817,7 +818,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         margin: 20px;
     }
     .founder-img{
-        height: 440px;
+        height: 340px;
     }
     .founder-title{
         font-size: 30px;
