@@ -696,6 +696,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .founder-title{
     text-align: center;
     font-family: 'Lilita One', cursive;
+    padding-bottom: 30px;
     color: white;
     font-size: 48px;
 }
@@ -767,6 +768,21 @@ Remove or comment-out the code block below to see how the browser will fall-back
     height: 100%;
     object-fit: contain;
 }
+.founder-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 30px 0px;
+}
+.founder-msg-container{
+    width: 50%;
+    height: auto;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+}
 
 @media screen and (max-width: 608px){
     .founder-container{
@@ -786,4 +802,13 @@ Remove or comment-out the code block below to see how the browser will fall-back
     .gallery-head{
         font-size: 35px;
     }
+    .founder-msg-container{
+        width: 100%;
+        padding: 30px;
+        font-size: 15px;
+    }
+    .founder-msg{
+       padding: 10px 0px;
+    }
+    
 }
