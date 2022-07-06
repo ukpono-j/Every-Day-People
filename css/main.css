@@ -1056,5 +1056,13 @@ footer{
     margin: 10px;
     width: 40px;
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
+}
+
+.footer-social-links img{
+     height: 40px;
+     display: flex;
 }
