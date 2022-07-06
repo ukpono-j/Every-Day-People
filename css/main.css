@@ -344,7 +344,25 @@ body {
 
 }
 
-
+@media screen and (max-width: 351px){
+    .hero-t {
+        font-size: 3em;
+        line-height: 60px !important;
+        /* height: 100px !important; */
+    }
+    .hero-btn a {
+        display: flex;
+        padding: 14px 30px;
+        border-radius: 30px;
+        background-color: #0a5728;
+        font-family: 'Comfortaa', cursive;
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+    
+    }
+    
+}
 
 
 @keyframes shad-anim {
@@ -621,6 +639,10 @@ body {
     padding: 0 2rem 2rem;
 }
 
+
+@media screen and (max-width: 434px){
+
+}
 .gallery-head {
     text-align: center;
     font-family: 'Lilita One', cursive;
@@ -647,6 +669,7 @@ body {
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
     border-radius: 50px;
+    /* border: 10px solid red; */
 }
 
 .gallery-image {
@@ -672,7 +695,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 @supports (display: grid) {
     .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-template-columns: repeat( minmax(25rem, 1fr));
         grid-gap: 2rem;
     }
 
@@ -797,10 +820,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
         height: 440px;
     }
     .founder-title{
-        font-size: 35px;
+        font-size: 30px;
+        padding: 0px 30px;
     }
     .gallery-head{
-        font-size: 35px;
+        font-size: 30px;
+        padding: 0px 30px;
     }
     .founder-msg-container{
         width: 100%;
