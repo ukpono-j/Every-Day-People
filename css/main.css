@@ -11,6 +11,7 @@ body {
     /* height: 100vh; */
     /* font-family: "Raleway", sans-serif; */
     /* overflow-y: hidden; */
+    scroll-behavior: smooth;
 }
 
 /* font-family: 'Comfortaa', cursive; */
@@ -878,4 +879,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
         height: 340px;
     }
 
+}
+
+
+/* ======================= TEAMS ================ */
+.teams{
+    height: 100vh;
+    border: 1px solid #000;
 }
