@@ -10,6 +10,13 @@
 </head>
 
 <body>
+    <!-- PAGE LOADER : PLACE RIGHT AFTER BODY TAG -->
+    <!-- <div class="page-loader">
+        <div class="spinner"></div>
+        <div class="txt">3V3RYDAY<br>P3OPL3</div>
+    </div> -->
+    <!-- PAGE LOADER END : PLACE RIGHT AFTER BODY TAG -->
+
 
     <div class="nav">
         <input type="checkbox" id="nav-check">
@@ -36,12 +43,6 @@
         </div>
     </div>
 
-    <!-- PAGE LOADER : PLACE RIGHT AFTER BODY TAG -->
-    <!-- <div class="page-loader">
-        <div class="spinner"></div>
-        <div class="txt">3V3RYDAY<br>P3OPL3</div>
-    </div> -->
-    <!-- PAGE LOADER END : PLACE RIGHT AFTER BODY TAG -->
 
 
 
@@ -190,22 +191,110 @@
 
 
         <div class="teams" id="teams">
-
+            <div class="team-container">
+                <div class="team-title">The Team</div>
+                <div class="team-image1">
+                    <div class="img-box">
+                        <img src="./images/dp4.png" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Library</p>
+                                <p class="opacity-low">Architect Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="./images/dp7.png" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Night Sky</p>
+                                <p class="opacity-low">Cinematic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="./images/dp3.png" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Tea Talk</p>
+                                <p class="opacity-low">Composite</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="./images/dq1.png" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Road</p>
+                                <p class="opacity-low">Landscape</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="./images/dp2.png" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Sea</p>
+                                <p class="opacity-low">Cityscape</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="./images/dp5.png" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Vintage</p>
+                                <p class="opacity-low">Cinematic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
 
+        <!-- ====================== Human ================= -->
+
+        <div class="testimonials">
+            <div class="testimonial-title">
+                Testimonials
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-img">
+                    <img src="./images/dp3.png" alt="">
+                </div>
+                <div class="testimonial-txt">
+                    "
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae quas dolore quae porro numquam
+                    dolores possimus accusamus doloribus debitis quia, non adipisci tempora mollitia hic repellat
+                    voluptatem accusantium corporis.
+                    "
+                </div>
+                <div class="testimonial-dot-container">
+                    <div class="testimonial-dot dot-active"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                </div>
+            </div>
+        </div>
 
 
-
-
-
-
-
+        <footer>
+            <div class="footer-social">
+                 <div class="footer-social-links"></div>
+                 <div class="footer-social-links"></div>
+                 <div class="footer-social-links"></div>
+            </div>
+             <div style="padding-top: 10px;">
+                © 2022 Quirkies
+             </div>
+        </footer>
 
 
 
         <!-- PAGE CONTENT END -->
+        <script src="js/app.js"></script>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
         <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
         <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js'></script>
@@ -213,20 +302,7 @@
         <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js'></script>
         <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js'></script>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-        <script src="js/app.js"></script>
-        <script>
-            $(window).on("load", function () {
-                setTimeout(function () {
-                    // allowing 3 secs to fade out loader
-                    $(".page-loader").fadeOut("slow");
-                }, 3500);
-            });
 
-            // $('#overlay-menu ul li a').click(function () {
-            //     $(this).closest('.overlay').hide();
-            //     $(this).closest('.overlay-menu').hide();
-            // });
-        </script>
 </body>
 
 </html>

@@ -6,11 +6,6 @@ body {
     margin: 0;
     box-sizing: border-box;
     position: relative;
-    /* background: url("https://images.unsplash.com/photo-1569973560851-8c4563f4c3c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center center; */
-    /* background-size: cover; */
-    /* height: 100vh; */
-    /* font-family: "Raleway", sans-serif; */
-    /* overflow-y: hidden; */
     scroll-behavior: smooth;
 }
 
@@ -124,7 +119,7 @@ body {
 
 .nav>.nav-links>a:hover {
     background-color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid wheat solid white;
+    border-bottom: 1px solid white;
 }
 
 .nav>#nav-check {
@@ -171,10 +166,8 @@ body {
     .nav>.nav-links {
         position: absolute;
         display: block;
-        width: 60%;
+        width: 100%;
         background: linear-gradient(to right, #0a5728, #0a090f);
-        /* background-color: #333; */
-        /* border: 1px solid wheat solid red; */
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -696,26 +689,6 @@ body {
     transform: scale(1.15);
 }
 
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
-/* @supports (display: grid) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat( minmax(25rem, 1fr));
-        grid-gap: 2rem;
-    }
-
-    .gallery,
-    .gallery-item {
-        margin: 0;
-    }
-} */
 
 @media screen and (max-width: 897px) {
 
@@ -724,7 +697,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 }
 
-@media screen and (max-width: 546px){
+@media screen and (max-width: 546px) {
     .gallery-item {
         width: 100%;
     }
@@ -744,6 +717,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     font-family: 'Lilita One', cursive;
     padding-bottom: 30px;
     color: white;
+    text-transform: uppercase;
     font-size: 48px;
 }
 
@@ -757,25 +731,18 @@ Remove or comment-out the code block below to see how the browser will fall-back
     width: 300px;
     height: auto;
     margin: 20px;
-    /* border-radius: 50px; */
-    /* border: 1px solid wheat solid white; */
 }
 
 .founder-img {
     width: 100%;
-    /* border-top-left-radius: 50px;
-    border-top-right-radius: 50px; */
     height: 300px;
     border-radius: 50px;
-    /* border: 1px solid wheat solid white; */
 }
 
 .founder-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-top-left-radius: 50px;
-    border-top-right-radius: 50px; */
     border-radius: 50px;
 }
 
@@ -791,7 +758,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .founder-name {
     color: white;
-    /* font-family: 'Comfortaa', cursive; */
     font-family: 'Lilita One', cursive;
     font-size: 20px;
     padding: 0px 10px;
@@ -815,7 +781,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .handles-container a {
-    /* text-decoration: none; */
     font-family: 'Comfortaa', cursive;
     color: #fff;
 }
@@ -878,16 +843,218 @@ Remove or comment-out the code block below to see how the browser will fall-back
         padding: 10px 0px;
     }
 }
-@media screen and (max-width: 403px){
+
+@media screen and (max-width: 403px) {
     .founder-img {
         height: 340px;
     }
-
+    .founder-title {
+        font-size: 38px;
+    }
 }
 
 
 /* ======================= TEAMS ================ */
-.teams{
-    height: 100vh;
-    border: 1px solid wheat solid #000;
+.teams {
+    height: auto;
+    background: linear-gradient(to right, #0a5728, #0a090f);
+    /* border: 1px solid wheat solid #fff; */
+}
+
+.team-container {
+    height: auto;
+    /* border: 1px solid  #fff; */
+}
+
+.team-title {
+    text-align: center;
+    color: white;
+    font-family: 'Lilita One', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.team-image1 {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-image1 img {
+    height: 100%;
+    border-radius: 50px;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 50px;
+    /* background-color: white; */
+    /* border: 1px solid  #fff; */
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+    transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.img-box:hover {
+    cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 400px) {
+    .img-box {
+        box-sizing: content-box;
+        margin: 10px;
+        height: 300px;
+        width: 350px;
+    }
+}
+
+
+
+/* ===================== HUMAN ============== */
+.testimonials{
+    height: auto;
+    background: linear-gradient(to right, #0a5728, #0a090f);
+    /* border: 1px solid  white; */
+    display: flex;
+    padding: 100px 0px 60px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial-container{
+   max-width: 600px;
+    height: auto;
+    padding: 30px;
+    /* border: 1px solid  white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.testimonial-title{
+    color: white;
+    font-family: 'Lilita One', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.testimonial-img{
+    height: 80px;
+    /* border: 1px solid  white; */
+    width: 80px;
+    border-radius: 100%;
+}
+.testimonial-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.testimonial-txt{
+    color: white;
+    /* font-family: 'Lilita One', cursive; */
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 20px;
+}
+.testimonial-dot-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.testimonial-dot{
+    height: 9px;
+    border-radius: 100%;
+    width: 9px;
+    margin: 20px 10px;
+    border: 1px solid  white;
+}
+.dot-active{
+    background-color: white;
+}
+
+@media screen and (max-width: 464px){
+    .testimonial-txt{
+        font-size: 14px;
+    }
+    .testimonial-title{
+        font-size: 30px;
+    }
+}
+
+
+footer{
+    height: auto;
+    /* border: 1px solid white; */
+    background: linear-gradient(to right, #0a5728, #0a090f);
+    display: flex;
+    /* padding: 1; */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social-links{
+    height: 40px;
+    margin: 10px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 100%;
 }
