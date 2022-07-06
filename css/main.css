@@ -647,9 +647,6 @@ body {
     padding: 0 2rem 2rem;
 }
 
-
-@media screen and (max-width: 434px) {}
-
 .gallery-head {
     text-align: center;
     font-family: 'Lilita One', cursive;
@@ -664,13 +661,16 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     /* Compensate for excess margin on outer gallery flex items */
     margin: -1rem -1rem;
 }
 
 .gallery-item {
     /* Minimum width of 24rem and grow to fit available space */
-    flex: 1 0 24rem;
+    /* flex: 1 0 24rem; */
+    width: 400px;
+    /* width: 100%; */
     /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
     margin: 1rem;
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -699,10 +699,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 */
 
-@supports (display: grid) {
+/* @supports (display: grid) {
     .gallery {
         display: grid;
-        grid-template-columns: repeat(minmax(25rem, 1fr));
+        grid-template-columns: repeat( minmax(25rem, 1fr));
         grid-gap: 2rem;
     }
 
@@ -710,10 +710,20 @@ Remove or comment-out the code block below to see how the browser will fall-back
     .gallery-item {
         margin: 0;
     }
+} */
+
+@media screen and (max-width: 897px) {
+
+    .gallery-item {
+        width: 230px;
+    }
 }
 
-
-
+@media screen and (max-width: 546px){
+    .gallery-item {
+        width: 100%;
+    }
+}
 
 
 /* ====================== FOUNDER =================== */
@@ -840,7 +850,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 
     .founder-img {
-        height: 340px;
+        height: 440px;
     }
 
     .founder-title {
@@ -861,6 +871,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
     .founder-msg {
         padding: 10px 0px;
+    }
+}
+@media screen and (max-width: 403px){
+    .founder-img {
+        height: 340px;
     }
 
 }
